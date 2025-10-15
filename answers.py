@@ -1,7 +1,10 @@
 """
 TechLeap Apprenticeship — Assessment Answers
 Author: Fancy Chepngetich Byegon
-Date: October 2025
+Date: 15th October 2025
+
+
+
 Description:
   This script contains answers to all sections of the TechLeap Apprenticeship assessment:
   1. Logic & Problem Solving
