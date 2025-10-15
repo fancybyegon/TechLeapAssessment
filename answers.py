@@ -1,6 +1,6 @@
 """
 TechLeap Apprenticeship — Assessment Answers
-Author: Fancy Byegon
+Author: Fancy Chepngetich Byegon
 Date: October 2025
 Description:
   This script contains answers to all sections of the TechLeap Apprenticeship assessment:
@@ -10,21 +10,15 @@ Description:
   4. Version Control & Collaboration
 """
 
-# ===============================================================
+
 # SECTION 1: LOGIC & PROBLEM SOLVING (10 marks)
-# ===============================================================
+
 
 def second_largest(nums):
-    """
-    Returns the second-largest unique number in a list.
-    Approach:
-      - Convert list to a set to remove duplicates.
-      - Sort the unique numbers.
-      - Return the second largest.
-    """
+    
     unique_nums = sorted(set(nums))
     if len(unique_nums) < 2:
-        raise ValueError("List must contain at least two unique numbers.")
+        raise ValueError()
     return unique_nums[-2]
 
 print("Q1: Second Largest Number →", second_largest([10, 4, 8, 2, 10]))
@@ -32,14 +26,14 @@ print("Q1: Second Largest Number →", second_largest([10, 4, 8, 2, 10]))
 """
 Q2: Page Optimization
 Causes and Fixes:
-1️⃣ Large Image Files — compress images or use WebP format.
-2️⃣ Too Many HTTP Requests — minify/merge CSS & JS, enable lazy loading.
-3️⃣ No Caching — enable browser caching or use a CDN.
+1 Large Image Files — compress images or use WebP format.
+2 Too Many HTTP Requests — minify/merge CSS & JS, enable lazy loading.
+3 No Caching — enable browser caching or use a CDN.
 """
 
-# ===============================================================
+
 # SECTION 2: WEB / SOFTWARE DEVELOPMENT (15 marks)
-# ===============================================================
+
 
 import requests
 
@@ -72,9 +66,9 @@ def calculate_total_revenue(data):
 total = calculate_total_revenue(sales_data)
 print("\nQ4: Total Store Revenue →", total)
 
-# ===============================================================
+
 # SECTION 3: DEBUGGING & REASONING (10 marks)
-# ===============================================================
+
 
 """
 Original buggy code:
@@ -97,9 +91,8 @@ numbers = [1, 2, 3, 4, 5]
 numbers = [n for n in numbers if n % 2 != 0]
 print("\nQ5: Corrected List (Removed Even Numbers) →", numbers)
 
-# ===============================================================
 # SECTION 4: VERSION CONTROL & COLLABORATION (5 marks)
-# ===============================================================
+
 
 """
 Q6: Version Control & Collaboration
@@ -115,7 +108,7 @@ Q6: Version Control & Collaboration
 3️⃣ Problem faced:
    - Merge conflicts during branching.
    - Solved by reviewing conflicting lines, editing, testing, and using:
-     git add . && git merge --continue
+     git add . && git merge 
 """
 
 print("\nQ6: See explanation in comments above ✅")
